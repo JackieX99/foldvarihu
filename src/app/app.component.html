@@ -1,0 +1,6 @@
+<app-navbar *ngIf="language == 'hu'"></app-navbar>
+<app-navbar-en *ngIf="language == 'en'"></app-navbar-en>
+<section>
+    <router-outlet></router-outlet>
+</section>
+<app-footer class="mt-auto"></app-footer>

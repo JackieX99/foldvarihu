@@ -1,0 +1,81 @@
+<button class="btn btn-secondary logoutBtn" (click)="logout()">Kijelentkezés</button>
+<h1 class="h3">Szia {{this.currentUser}}!</h1>
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="container-fluid offset-3 col-6 ratingField" *ngFor="let rating of this.ratings">
+                    {{rating.ratingName}}, {{rating.ratingMessage}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container" *ngIf="!this.adminEmails.includes(this.currentUser)">
+    <h3>Neked jelenleg itt nincs jogosultságod semmihez, kérlek nézz vissza később.</h3>
+</div>
+
+<div class="container" *ngIf="this.adminEmails.includes(this.currentUser)">
+    <div class="row">
+        <div class="col-6">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Név</th>
+                    <th>Szöveg</th>
+                    <th colspan="2">Adminisztráció</th>
+                </tr>
+                <tr *ngFor="let rating of ratings; let i = index">
+                    <th>{{i}}</th>
+                    <th>{{rating.ratingName}}</th>
+                    <th>{{rating.ratingMessage}}</th>
+                    <th><button class="btn btn-secondary" data-toggle="modal" data-target="#editRatingModal"
+                            (click)="editRating(i)">Szerkesztés</button></th>
+                    <th><button class="btn btn-secondary" (click)="deleteRating(i)">Törlés</button></th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-6">
+            <div class="container" style="margin-top: 60px;">
+                <h1>Portfólió statisztika:</h1>
+                <br>
+                <h5>Összes oldal lekérés(látogatás): <p id="visitCount"></p></h5>
+                <br>
+                <h5>Összes vélemény: {{ratings.length}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Vélemény szerkesztése -->
+
+<div class="modal fade" id="editRatingModal" tabindex="-1" aria-labelledby="editRatingModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editRatingModal">Vélemény szerkesztése</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form (ngSubmit)="updateRating(f.value)" #f="ngForm" id="edit-rating-form">
+                    <div class="form-group">
+                      <label for="ratingName" class="ratingEdit">Név</label>
+                      <input type="text" id="ratingName" name="ratingName" ngModel class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="ratingMessage" class="ratingEdit">Megjegyzés</label>
+                      <input type="text" id="ratingMessage" name="ratingMessage" ngModel class="form-control" required>
+                    </div>
+                    <p style="color: black;"><span style="font-weight: 600;">Megjegyzés:</span>Mentés előtt mindkét értékbe kell írni valamit, hogy a kód érzékelje a változást, ha változtatni szeretnénk, ha nem.</p>
+                    <p class="responseMess" id="responsemess"></p>
+                    <button class="btn btn-success" type="submit">Vélemény mentése</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

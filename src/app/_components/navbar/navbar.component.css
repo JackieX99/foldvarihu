@@ -1,0 +1,32 @@
+li{
+    font-weight: 500;
+}
+.active{
+    font-weight: 600 !important;
+}
+.languageimg{
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+i{
+    background-color: white;
+}
+
+.ml-auto{
+    margin-right: 3%;
+}
+.nav-item{
+    margin: 0.5%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #navlink{
+        margin-left: 5%;
+        font-size: 110%;
+    }
+    .languageimg{
+        margin-left: 0;
+    }
+}

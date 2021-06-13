@@ -1,0 +1,19 @@
+div{
+    background-color: rgb(53, 51, 51) !important;
+    height: 150px;
+    width: 100%;
+}
+i{
+    opacity: .7;
+    transition: opacity 0.2s ease-in-out;
+}
+i:hover{
+    opacity: 1.1;
+}
+.row{
+    margin-top: 30px;
+}
+a i{
+    margin-left: 5px;
+    margin-right: 5px;
+}

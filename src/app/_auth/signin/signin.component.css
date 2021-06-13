@@ -1,0 +1,46 @@
+.container{
+    margin-top: 40px;
+    /* background-color: rgb(71, 71, 71);
+    box-shadow: 2px 2px 5px 0px rgb(71, 71, 71); */
+    height: 100%;
+}
+
+label{
+    font-size: medium;
+    font-weight: 600;
+}
+input{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+input:focus{
+    background-color: lightgray;
+    color: black;
+}
+
+.container h2{
+    text-align: center;
+    font-weight: 600;
+}
+.btn{
+    float: left;
+}
+.loginText{
+    float: right;
+    cursor: pointer;
+    text-align: right;
+}
+
+.error{
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+a{
+    color: lightgray;
+}
+a:hover{
+    color: white;
+}

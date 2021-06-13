@@ -1,0 +1,181 @@
+<div class="pcview">
+    <div class="container">
+        <h3 class="vegzettsegtitle">Jelenlegi végzettségeim, pályám</h3>
+        <!-- <div class="circle">
+            <fa-icon [icon]="faGraduationCap"></fa-icon>
+        </div> -->
+        <div class="oszlop">
+            <button type="button" class="btn btn5 btn-primary"
+                (click)="this.showFifthDiv = !this.showFifthDiv"></button>
+            <div class="fifthdiv" id="fifthdiv"
+                [ngStyle]="this.showFifthDiv ? {'animation': 'disappearDivOnRight 1500ms ease-in-out both'} : {'animation': 'showDivOnRight 1500ms ease-in-out both'}">
+
+                <h5>Neumann János Számítógép-tudományi Társaság</h5>
+
+                <p>ECDL bizonyítvány - 2019</p>
+            </div>
+            <button type="button" class="btn btn1 btn-primary"
+                (click)="this.showFirstDiv = !this.showFirstDiv"></button>
+            <div class="firstdiv" id="firstdiv"
+                [ngStyle]="this.showFirstDiv ? {'animation': 'disappearDivOnRight 1500ms ease-in-out both'} : {'animation': 'showDivOnRight 1500ms ease-in-out both'}">
+
+                <h5>radnóti miklós közgazdasági technikum</h5>
+
+                <p>Érettségi bizonyítvány - 2022</p>
+            </div>
+
+            <button type="button" class="btn btn2 btn-primary"
+                (click)="this.showSecondDiv = !this.showSecondDiv"></button>
+            <div class="seconddiv" id="seconddiv"
+                [ngStyle]="this.showSecondDiv ? {'animation': 'disappearDivOnLeft 1500ms ease-in-out both'} : {'animation': 'showDivOnLeft 1500ms ease-in-out both'}">
+                <h5>radnóti miklós közgazdasági technikum</h5>
+
+                <p>Szoftverfejlesztő OKJ - 2023</p>
+            </div>
+
+            <button type="button" class="btn btn3 btn-primary"
+                (click)="this.showThirdDiv = !this.showThirdDiv"></button>
+            <div class="thirddiv" id="thirdddiv"
+                [ngStyle]="this.showThirdDiv ? {'animation': 'disappearDivOnLeft 1500ms ease-in-out both'} : {'animation': 'showDivOnLeft 1500ms ease-in-out both'}">
+
+                <h5>helixlab - pécs</h5>
+
+                <p>Frontend fejlesztő OKJ - 2021</p>
+            </div>
+
+            <button type="button" class="btn btn4 btn-primary"
+                (click)="this.showFourthDiv = !this.showFourthDiv"></button>
+            <div class="fourthdiv" id="fourthdiv"
+                [ngStyle]="this.showFourthDiv ? {'animation': 'disappearDivOnRight 1500ms ease-in-out both'} : {'animation': 'showDivOnRight 1500ms ease-in-out both'}">
+
+
+                <h5>helixlab - pécs</h5>
+                <p>Frontend fejlesztő junior - 2022</p>
+            </div>
+
+
+        </div>
+        <!-- <div class="circle2">
+            <fa-icon [icon]="faBriefcase" class="briefcase"></fa-icon>
+        </div> -->
+    </div>
+</div>
+<div class="mobilview">
+    <h3 class="vegzettsegtitle">Jelenlegi végzettségeim, pályám</h3>
+    <div class="row">
+        <div class="col-8 offset-2 col-sm-5 offset-sm-1 divs div1">
+
+
+            <h5>Neumann János Számítógép-tudományi Társaság</h5>
+            <br>
+            <p>ECDL bizonyítvány - 2019</p>
+
+        </div>
+        <div class="col-8 offset-2 col-sm-5 divs div2">
+
+
+            <h5>helixlab - pécs</h5>
+            <br>
+            <p>Frontend fejlesztő OKJ - 2021</p>
+
+        </div>
+        <div class="col-8 offset-2 col-sm-5 offset-sm-1 divs div3">
+
+            <h5>radnóti miklós közgazdasági technikum</h5>
+            <br>
+            <p>Érettségi bizonyítvány - 2022</p>
+        </div>
+        <div class="col-8 offset-2 col-sm-5 divs div4">
+
+            <h5>helixlab - pécs</h5>
+            <br>
+            <p>Frontend fejlesztő junior - 2022</p>
+        </div>
+        <div class="col-8 offset-2 col-sm-5 divs div5">
+
+            <h5>radnóti miklós közgazdasági technikum</h5>
+            <br>
+            <p>Szoftverfejlesztő OKJ - 2023</p>
+        </div>
+    </div>
+</div>
+<div class="skills">
+    <h3>Jelenlegi tudásom</h3>
+    <div class="row">
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-100"><span>HTML<br>100%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-75"><span>CSS<br>75%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-80"><span>JavaScript<br>80%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-80"><span>Bootstrap<br>80%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-68"><span>Angular<br>68%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-20"><span>Java<br>20%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-15"><span>C++<br>15%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-10"><span>Python<br>10%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-66"><span>TypeScript<br>66%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-60"><span>Photoshop<br>60%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-95"><span>Lightroom<br>95%</span></div>
+        </div>
+        <div class="offset-1 col-md-2">
+            <div class="progress-circle progress-30"><span>Git<br>30%</span></div>
+        </div>
+    </div>
+</div>
+<div class="skills-mobile">
+    <h3>Jelenlegi tudásom</h3>
+    <div class="row">
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-100"><span>HTML</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-75"><span>CSS</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-80"><span>JavaScript</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-80"><span>Bootstrap</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-50"><span>Angular</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-20"><span>Java</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-15"><span>C++</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-10"><span>Python</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-66"><span>TypeScript</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-60"><span>Photoshop</span>&nbsp;</div>
+        </div>
+        <div class="offset-1 col-3 offset-2">
+            <div class="progress-circle progress-95"><span>Lightroom</span>&nbsp;</div>
+        </div>
+    </div>
+</div>
+<br><br>

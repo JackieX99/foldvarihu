@@ -1,0 +1,24 @@
+.container-fluid {
+    margin-top: 50px;
+}
+
+.divbutton {
+    border-radius: 4px;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.divbutton:hover {
+    transform: scale(1.05);
+}
+
+.modal-body{
+    background-color: darkgray;
+}
+
+.card-img-top{
+    max-height: 160px;
+}
+.card-text span{
+    text-decoration: underline;
+}

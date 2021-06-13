@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="../../../assets/img/logo/logo_black.png" alt="foldvarilogo" width="40" height="45"
+                class="d-inline-block align-text-middle">
+            Földvári.hu
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/mainpage/en" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/aboutme/en" routerLinkActive="active">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/references/en" routerLinkActive="active">My works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/connects/en" routerLinkActive="active">Contact</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Switch language to Hungarian." animation="true">
+                    <img src="../../../assets/img/language/hu.png" alt="Switch to hungarian" (click)="changeLang('hu')" width="50"height="30" class="ms-auto languageimg" routerLink="mainpage/hu">
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

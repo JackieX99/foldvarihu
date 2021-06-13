@@ -1,0 +1,14 @@
+li{
+    font-weight: 500;
+}
+.active{
+    font-weight: 600 !important;
+}
+.languageimg{
+    margin-top: 4px;
+    cursor: pointer;
+    
+}
+body{
+    user-select: none;
+}

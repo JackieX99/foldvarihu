@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="h4">Regisztráció</h2>
+  <div class="row justify-content-center">
+    <div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-2 ">
+      <form (ngSubmit)="onSignup(f)" #f="ngForm" id="signup-form">
+        <div class="form-group">
+          <label for="email">Email cím</label>
+          <input type="email" id="email" name="email" ngModel class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Jelszó</label>
+          <input type="password" id="password" name="password" ngModel class="form-control" required>
+        </div>
+        <button class="btn btn-secondary" type="submit" [disabled]="!f.valid">Regisztráció</button>
+        <a [routerLink]="['../signin']"><p class="loginText">Már van felhasználóm,<br>tovább a bejelentkező felületre.</p></a>
+        <p class="error red-text center-align"></p>
+      </form>
+    </div>
+  </div>
+</div>
